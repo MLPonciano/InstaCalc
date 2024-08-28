@@ -1,0 +1,130 @@
+/*© Calculator App By Matthew Lebron Ponciano 2024*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1E1C1C;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(196, 196, 196);
+}
+
+
+.box {
+    width: 500px;
+    height: 700px;
+    background: #1E1C1C;
+    box-shadow:  5px 5px 18px #151313,
+                -5px -5px 18px #272525;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-box {
+    width: 400px;
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 24px;
+    background: #1E1C1C;
+    box-shadow: inset 5px 5px 18px #151313,
+                inset -5px -5px 18px #272525;
+    border-radius: 30px;
+    font-size: 50px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-box input {
+    background: none; 
+    border: none;    
+    color: rgb(196, 196, 196);   
+    width: 100%;      
+    height: 100%;   
+    padding: 0 20px;  
+    text-align: right; 
+    font-size: 50px;  
+    outline: none;    
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: auto;
+}
+
+.btn {
+    width: 85px;
+    height: 85px;
+    border-radius: 30px;
+    background: #1E1C1C;
+    
+    outline: none;
+    border: none;
+    font-size: 24px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn:active {
+    box-shadow: inset 5px 5px 18px #151313,
+                inset -5px -5px 18px #272525;
+    transform: translateY(2px);
+}
+
+.btn:hover {
+    background: #1E1C1C;
+    box-shadow:  5px 5px 18px rgb(21, 19, 19),
+                -5px -5px 18px rgb(39, 37, 37);
+    
+}
+
+.btn.equal {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.btn.clear {
+    width: 100%;
+    grid-column: span 2;
+}
